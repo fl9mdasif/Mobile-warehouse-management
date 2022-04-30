@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Xiaomi 11 Lite 5G NE",
+        "imgUrl": "https://i.ibb.co/521HhRR/1010-500x500.jpg",
+        "price": "35000",
+        "quantity": "12",
+        "description": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM",
+        "supplier": "MD ASIF"
+    },
+    {
+        "name": "Poco X2",
+        "imgUrl": "https://i.ibb.co/fHXGZKV/giant-97220-500x500.jpg",
+        "price": "25000",
+        "quantity": "7",
+        "description": "Hybrid Dual SIM 6.67 Inch Screen  6 GB RAM 128 GB ROM 64MP + 8MP + 2MP + 2MP Rear Camera 20MP + 2MP Front Camera Android 10.0; MIUI 11 OS Non-Removable Li-Po 4500 mAh Battery",
+        "supplier": "MD ASIF"
+    },
+    {
+        "name": "Redmi Note 9S",
+        "imgUrl": "https://i.ibb.co/Gcjqj07/giant-99410-500x500.jpg",
+        "price": "20000",
+        "quantity": "5",
+        "description": "Dual SIM 6.67 Inch Display 4GB RAM 64GB ROM 48MP + 8MP + 5MP + 2MP Rear Camera 16MP Front Camera Android 10.0; MIUI 11 OS Side-Mounted Fingerprint Sensor ",
+        "supplier": "MD ASIF"
+    },
+    {
+        "name": "Pocophone F1",
+        "imgUrl": "https://i.ibb.co/DQHqrKL/pocophone-f1-500x500.jpg",
+        "price": "12000",
+        "quantity": "12",
+        "description": " Dual SIM 6.18 inch screen, 1080 x 2246 resolution  6GB RAM 64GB internal storage 12MP + 5MP rear camera 20MP selfie camera 4000 mAh battery",
+        "supplier": "MD ASIF"
+    },
+    {
+        "name": "Redmi K20 Pro",
+        "imgUrl": "https://i.ibb.co/Hx7tk6v/redmi-K20-Pro-500x500.jpg",
+        "price": "38000",
+        "quantity": "4",
+        "description": "Dual SIM 6.39 inch screen, 1080 x 2340 resolution 6GB RAM 128GB internal storage 48MP + 8MP + 13MP triple rear camera Motorized pop-up 20MP selfie camera 4000 mAh battery",
+        "supplier": "MD ASIF"
+    },
+    {
+        "name": "Redmi Note 7 Pro",
+        "imgUrl": "https://i.ibb.co/p1Tnnhd/redmi-note-7-pro-500x500.jpg",
+        "price": "15000",
+        "quantity": "12",
+        "description": "Dual 48+5 Megapixel 1080 x 2340 pixels 19.5:9 ratio 409 ppi density Protection Corning Gorilla Glass 5",
+        "supplier": "MD ASIF"
+    },
+    {
+        "name": "Mi Note 10",
+        "imgUrl": "https://i.ibb.co/dcX5fZL/Xiaomi-Mi-Note-10-500x500.png",
+        "price": "35000",
+        "quantity": "12",
+        "description": "AMOLED HDR10 2G / 3G / 4G 600 Nits 128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM",
+        "supplier": "MD ASIF"
+    }
+]
