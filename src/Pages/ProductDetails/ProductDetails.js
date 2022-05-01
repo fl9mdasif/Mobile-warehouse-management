@@ -1,6 +1,6 @@
 // export default ServiceDetail;
 import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import useProducts from '../../hooks/Hooks';
 
 
@@ -18,6 +18,11 @@ const ProductDetails = () => {
             .then(res => res.json())
             .then(data => setProduct(data))
     }, []);
+    const navigate = useNavigate();
+
+    const navigateToAddProduct = () => {
+        navigate('/addproduct')
+    }
     // console.log(service)
     return (
         <div className='w-75 mx-auto text-center'>
@@ -33,15 +38,16 @@ const ProductDetails = () => {
                     <li className="list-group-item">Quantity: {product.quantity}</li>
                     <li className="list-group-item">Supplier: {product.supplier}</li>
                 </ul>
+                <div className="card-body">
+                    <button className='btn btn-primary w-75' onClick={() => navigateToAddProduct()}>Add Shoe</button>
+                </div>
                 {/* <div className="card-body">
                     <button className='btn btn-primary w-75'>Delivered</button>
                 </div>
                 <div className="card-body">
                     <button className='btn btn-primary w-75' onClick={() => navigateToUpdateQuantity(_id)}>Update Quantity</button>
                 </div>
-                <div className="card-body">
-                    <button className='btn btn-primary w-75' onClick={() => navigateToAddShoe()}>Add Shoe</button>
-                </div>
+                
                 <div className="card-body">
                     <button className='btn btn-primary w-75' onClick={() => handleDelete(_id)}>Delete Shoe</button>
                 </div> */}
