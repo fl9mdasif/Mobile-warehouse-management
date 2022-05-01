@@ -23,11 +23,12 @@ const ProductDetails = () => {
     const navigateToAddProduct = () => {
         navigate('/addproduct')
     }
+
     // console.log(service)
     return (
         <div className='w-75 mx-auto text-center'>
             <h2 className='m-3'>Manage Product</h2>
-            <img className="w-25" src={product.imgUrl} alt="Card image cap" />
+            <img className="w-25" src={product.imgUrl} alt="" />
             <div className="card card-group text-center row">
                 <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
@@ -39,16 +40,17 @@ const ProductDetails = () => {
                     <li className="list-group-item">Supplier: {product.supplier}</li>
                 </ul>
                 <div className="card-body">
-                    <button className='btn btn-primary w-75' onClick={() => navigateToAddProduct()}>Add Product</button>
+                    <button className='btn btn-primary w-50'>Delivered</button>
                 </div>
                 <div className="card-body">
-                    <Link to='/manageproduct'><button className='btn btn-primary w-75' >Delete Product</button></Link>
-                </div>
-                {/* <div className="card-body">
-                    <button className='btn btn-primary w-75'>Delivered</button>
+                    <button className='btn btn-primary w-50' onClick={() => navigateToAddProduct()}>Add Product</button>
                 </div>
                 <div className="card-body">
-                    <button className='btn btn-primary w-75' onClick={() => navigateToUpdateQuantity(_id)}>Update Quantity</button>
+                    <Link to='/manageproduct'><button className='btn btn-primary w-50' >Delete Product</button></Link>
+                </div>
+                {/* 
+                <div className="card-body">
+                    <button className='btn btn-primary w-50' onClick={() => navigateToUpdateQuantity(_id)}>Update Quantity</button>
                 </div>
                 
                  */}

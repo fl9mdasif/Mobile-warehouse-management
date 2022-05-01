@@ -27,12 +27,12 @@ const ManageProduct = () => {
                 <h1 className="my-5 text-center">Manage Product</h1>
                 <div className=" products-container">
                     {
-                        products.slice(1).map(product => <div
+                        products.slice().map(product => <div
                             key={product._id} product={product}>
 
                             <div className='w-100 mx-auto'>
                                 <div className="card mx-1 card-group text-center row">
-                                    <img className="card-img-top" src={product.imgUrl} alt="Card image cap" />
+                                    <img className="card-img-top" src={product.imgUrl} alt="" />
                                     <div className="card-body">
                                         <h5 className="card-title">{product.name}</h5>
                                         <p className="card-text">{product.description}</p>
@@ -47,8 +47,9 @@ const ManageProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>)
-                    }
+                        </div>
+
+                        )}
                 </div>
             </div>
 
