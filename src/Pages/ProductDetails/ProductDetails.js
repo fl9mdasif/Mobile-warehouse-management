@@ -39,10 +39,10 @@ const ProductDetails = () => {
                     <li className="list-group-item">Supplier: {product.supplier}</li>
                 </ul>
                 <div className="card-body">
-                    <button className='btn btn-primary w-75' onClick={() => navigateToAddProduct()}>Add Shoe</button>
+                    <button className='btn btn-primary w-75' onClick={() => navigateToAddProduct()}>Add Product</button>
                 </div>
                 <div className="card-body">
-                    <Link to='/manageproduct'><button className='btn btn-primary w-75' >Delete Shoe</button></Link>
+                    <Link to='/manageproduct'><button className='btn btn-primary w-75' >Delete Product</button></Link>
                 </div>
                 {/* <div className="card-body">
                     <button className='btn btn-primary w-75'>Delivered</button>

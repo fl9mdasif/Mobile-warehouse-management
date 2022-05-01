@@ -24,7 +24,7 @@ const ManageProduct = () => {
     return (
         <div id="products" className="container">
             <div className="row ">
-                <h1 className="my-5 text-center">Manage Your Product {products.length}</h1>
+                <h1 className="my-5 text-center">Manage Product</h1>
                 <div className=" products-container">
                     {
                         products.slice(1).map(product => <div

@@ -13,7 +13,7 @@ const Products = () => {
                 <h1 className="my-5 text-center">Our Products </h1>
                 <div className=" products-container">
                     {
-                        products.slice().map(product => <Product
+                        products.slice(0, 6).map(product => <Product
                             key={product._id} product={product}
                         ></Product>)
                     }
