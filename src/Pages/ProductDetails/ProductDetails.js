@@ -41,6 +41,9 @@ const ProductDetails = () => {
                 <div className="card-body">
                     <button className='btn btn-primary w-75' onClick={() => navigateToAddProduct()}>Add Shoe</button>
                 </div>
+                <div className="card-body">
+                    <Link to='/manageproduct'><button className='btn btn-primary w-75' >Delete Shoe</button></Link>
+                </div>
                 {/* <div className="card-body">
                     <button className='btn btn-primary w-75'>Delivered</button>
                 </div>
@@ -48,9 +51,7 @@ const ProductDetails = () => {
                     <button className='btn btn-primary w-75' onClick={() => navigateToUpdateQuantity(_id)}>Update Quantity</button>
                 </div>
                 
-                <div className="card-body">
-                    <button className='btn btn-primary w-75' onClick={() => handleDelete(_id)}>Delete Shoe</button>
-                </div> */}
+                 */}
             </div>
         </div>
     );

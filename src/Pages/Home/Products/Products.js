@@ -10,17 +10,15 @@ const Products = () => {
     return (
         <div id="products" className="container">
             <div className="row ">
-                <h1 className="my-5 text-center">Our Products {products.length}</h1>
+                <h1 className="my-5 text-center">Our Products </h1>
                 <div className=" products-container">
                     {
-                        products.slice(1).map(product => <Product
+                        products.slice().map(product => <Product
                             key={product._id} product={product}
                         ></Product>)
                     }
                 </div>
             </div>
-
-
         </div>
     );
 };

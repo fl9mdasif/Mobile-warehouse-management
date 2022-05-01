@@ -9,6 +9,7 @@ import Header from './Pages/Shared/Header/Header';
 import Products from './Pages/Home/Products/Products';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import ManageProduct from './Pages/ManageProduct/ManageProduct';
+import MyProducts from './Pages/MyProducts/MyProducts';
 // import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         <Route path='/home' element={<Home />}></Route>
         <Route path='/blog' element={<Blog />}></Route>
         <Route path='product' element={<Products />}></Route>
+        <Route path='myproducts' element={<MyProducts />}></Route>
+
         <Route path='/product/:productId' element={
           <ProductDetails></ProductDetails>}
         ></Route>
