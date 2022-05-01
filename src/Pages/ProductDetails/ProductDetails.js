@@ -1,14 +1,14 @@
 // export default ServiceDetail;
 import React, { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import useProducts from '../../hooks/Hooks';
+// import useProducts from '../../hooks/Hooks';
 
 
 
 const ProductDetails = () => {
 
     const { productId } = useParams();
-    const [products, setProducts] = useProducts({});
+    // const [products, setProducts] = useProducts({});
     const [product, setProduct] = useState({});
 
     useEffect(() => {

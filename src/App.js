@@ -10,8 +10,8 @@ import Products from './Pages/Home/Products/Products';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import ManageProduct from './Pages/ManageProduct/ManageProduct';
 import MyProducts from './Pages/MyProducts/MyProducts';
-import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 // import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+
 
 
 function App() {

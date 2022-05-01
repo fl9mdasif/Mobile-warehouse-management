@@ -11,7 +11,7 @@ const Product = ({ product }) => {
     const { _id, name, description, imgUrl, quantity, price, supplier } = product;
     return (
 
-        <div className='w-100 mx-auto'>
+        <div className='w-100 mx-auto py-2'>
             <div className="card mx-1 card-group text-center row">
                 <img className="card-img-top" src={imgUrl} alt="Card image cap" />
                 <div className="card-body">
