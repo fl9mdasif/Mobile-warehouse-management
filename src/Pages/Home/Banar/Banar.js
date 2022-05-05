@@ -4,11 +4,11 @@ import banarImg from '../../../images/banar-img.png'
 
 const Banar = () => {
     return (
-        <div className='container hero-container'>
-            <div className='text-container'>
-                <h2>Premium in Quality</h2>
+        <div className='mt-3 container hero-container'>
+            <div className='text-container m-3 pb-3'>
+                <h2>Top Selling products</h2>
                 <p>At TOFFPARK, you will get imported shoes. We always sell Genuine Leather Footwears </p>
-                <button className='button'>Buy Now</button>
+                <button className='button'>View more</button>
 
             </div>
             <div className='image-container'>

@@ -7,7 +7,7 @@ const MyProducts = () => {
     return (
         <div id="products" className="container">
             <div className="row ">
-                <h1 className="my-5 text-center">Our Products {products.length}</h1>
+                <h1 className="my-5 text-center">My Products {products.slice(6).length}</h1>
                 <div className=" products-container">
                     {
                         products.slice(6).map(product => <Product

@@ -11,8 +11,8 @@ const Reviews = () => {
     }, [])
     return (
 
-        <div className="container ">
-            <h2 className="text-center my-5">Customer Reviews</h2>
+        <div className="container border ">
+            <h2 className=" border  text-center my-5">Customer Reviews</h2>
             <div className="reviews-container">
                 {
                     reviews.slice(3).map(review => <Review key={review.id} review={review}></Review>)

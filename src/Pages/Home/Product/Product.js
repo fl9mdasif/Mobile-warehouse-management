@@ -13,7 +13,7 @@ const Product = ({ product }) => {
 
         <div className='w-100 mx-auto py-2'>
             <div className="card mx-1 card-group text-center row">
-                <img className="card-img-top" src={imgUrl} alt="Card image cap" />
+                <img className="card-img-top" src={imgUrl} alt="p" />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">{description}</p>

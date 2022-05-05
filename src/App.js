@@ -10,9 +10,8 @@ import Products from './Pages/Home/Products/Products';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import ManageProduct from './Pages/ManageProduct/ManageProduct';
 import MyProducts from './Pages/MyProducts/MyProducts';
+import Footer from './Pages/Shared/Footer/Footer';
 // import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
-
-
 
 function App() {
   return (
@@ -36,6 +35,7 @@ function App() {
         }></Route>
         <Route path='*' element={<NotFound />}></Route>
       </Routes>
+      <Footer ></Footer>
     </div >
 
   );
