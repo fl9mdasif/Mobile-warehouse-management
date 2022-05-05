@@ -1,7 +1,7 @@
 import React from 'react';
 import useProducts from '../../hooks/Hooks';
 // import Product from '../Home/Product/Product';
-
+import './ManageProduct.css'
 const ManageProduct = () => {
     const [products, setProducts] = useProducts();
 
@@ -43,7 +43,7 @@ const ManageProduct = () => {
                                         <li className="list-group-item">Supplier: {product.supplier}</li>
                                     </ul>
                                     <div className="card-body">
-                                        <button onClick={() => manageProductToDelete(product._id)} className='btn btn-primary w-75'>Delete Product</button>
+                                        <button id="btn" onClick={() => manageProductToDelete(product._id)} className='btn btn-primary w-75'>Delete Product</button>
                                     </div>
                                 </div>
                             </div>

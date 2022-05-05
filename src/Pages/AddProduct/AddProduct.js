@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
-
+import './AddProduct.css'
 
 const AddProduct = () => {
     const navigate = useNavigate();
@@ -43,9 +43,9 @@ const AddProduct = () => {
                 <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity", { required: true, })} />
                 <input className='mb-2' placeholder='Supplier' type="text" {...register("supplier", { required: true, })} />
                 <input className='mb-2' placeholder='Photo URL' type="text" {...register("imgUrl", { required: true, })} />
-                <input className='btn btn-primary' type="submit" value="Add Product" />
+                <input id='btn' className='btn ' type="submit" value="Add Product" />
                 <ToastContainer></ToastContainer>
-                <button onClick={handelNAvigate} className='btn btn-primary my-1 text-center '>Jump to myProducts</button>
+                <button id='btn' onClick={handelNAvigate} className='btn btn-primary my-1 text-center '>Jump to myProducts</button>
 
             </form>
 

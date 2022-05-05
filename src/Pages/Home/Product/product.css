@@ -4,3 +4,9 @@
     align-items: center;
     margin-top: 70px;
 }
+
+#btn {
+    background-color: rgb(198, 188, 239);
+    color: black;
+
+}

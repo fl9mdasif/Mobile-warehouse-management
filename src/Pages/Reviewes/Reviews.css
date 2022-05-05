@@ -15,3 +15,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+#reviewH2 {
+    background-color: rgb(198, 188, 239)
+}

@@ -24,7 +24,7 @@ const Product = ({ product }) => {
                     <li className="list-group-item">Supplier: {supplier}</li>
                 </ul>
                 <div className="card-body">
-                    <button onClick={() => navigateProductDetails(_id)} className='btn btn-primary w-75'>Manage Shoe</button>
+                    <button id="btn" onClick={() => navigateProductDetails(_id)} className='btn btn-primary w-75'>Manage Shoe</button>
                 </div>
             </div>
         </div>

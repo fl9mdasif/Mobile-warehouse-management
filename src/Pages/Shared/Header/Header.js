@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import logo from '../../../images/logo.png';
 import { signOut } from 'firebase/auth';
-
+import './Header.css'
 const Header = () => {
     const [user] = useAuthState(auth);
     const handleSignOut = () => {
@@ -15,8 +15,8 @@ const Header = () => {
     return (
 
         <>
-            <Navbar sticky="top" collapseOnSelect expand="lg" bg="primary" variant="dark">
-                <Container>
+            <Navbar id="navContainer" sticky="top" collapseOnSelect expand="lg" variant="dark">
+                <Container >
                     <Navbar.Brand as={Link} to="home"> <img width={140} alt="" src={logo} /> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

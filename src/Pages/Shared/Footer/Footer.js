@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import './footer.css'
 import {
     Box,
     Container,
@@ -23,8 +24,8 @@ const Footer = () => {
                 Xiaomi Bangladesh
             </h1> */}
             <Container className=" text-danger">
-                <Row className="border py-2">
-                    <Column className="text-black">
+                <Row id='row' className="border py-2">
+                    <Column id='col' className="text-black">
                         <Heading className=" mt- text-black " >About Us</Heading>
                         <FooterLink className="text-black " href="#">Aim</FooterLink>
                         <FooterLink className="text-black " href="#">Vision</FooterLink>
