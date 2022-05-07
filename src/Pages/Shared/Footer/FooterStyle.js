@@ -55,7 +55,7 @@ text-decoration: none;
 
 export const Heading = styled.p`
 font-size: 24px;
-color: #fff;
-margin-bottom: 40px;
+color: rgb(234, 121, 0);
+margin-bottom: 25px;
 font-weight: bold;
 `;

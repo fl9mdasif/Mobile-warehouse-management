@@ -20,7 +20,7 @@
 
 .button {
     align-items: center;
-    background-color: #0A66C2;
+    background-color: rgb(234, 121, 0);
     border: 0;
     border-radius: 100px;
     box-sizing: border-box;
@@ -48,7 +48,7 @@
 }
 
 .button {
-    background-color: rgb(198, 188, 239);
+    background-color: rgb(234, 121, 0);
     color: black;
 }
 

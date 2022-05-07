@@ -15,16 +15,16 @@ const Product = ({ product }) => {
             <div className="card mx-1 card-group text-center row border-none">
                 <img className="card-img-top" src={imgUrl} alt="p" />
                 <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
+                    <h5 className=" ppp card-title">{name}</h5>
                     <p className="card-text">{description}</p>
                 </div>
                 <ul className="list-group list-group-flush p-0">
-                    <li className="list-group-item">Price: {price}</li>
+                    <li className="ppp list-group-item">Price: {price}/tk</li>
                     <li className="list-group-item">Quantity: {quantity}</li>
                     <li className="list-group-item">Supplier: {supplier}</li>
                 </ul>
                 <div className="card-body">
-                    <button id="btn" onClick={() => navigateProductDetails(_id)} className='btn btn-primary w-75'>Manage Shoe</button>
+                    <button id="btn" onClick={() => navigateProductDetails(_id)} className='btn btn-primary w-75'>View Details</button>
                 </div>
             </div>
         </div>

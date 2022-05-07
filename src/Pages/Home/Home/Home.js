@@ -11,8 +11,8 @@ const Home = () => {
         <div>
             <Banar></Banar>
             <Products></Products>
-            <Reviews></Reviews>
             <CountUpDiv></CountUpDiv>
+            <Reviews></Reviews>
         </div>
     );
 };

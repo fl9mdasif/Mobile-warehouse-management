@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import useProducts from '../../hooks/Hooks';
+import './Pd.css'
 // import useProducts from '../../hooks/Hooks';
 
 const ProductDetails = () => {
