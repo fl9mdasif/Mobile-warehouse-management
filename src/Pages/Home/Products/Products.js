@@ -8,9 +8,9 @@ const Products = () => {
 
 
     return (
-        <div id="products" className="container">
-            <div className="row ">
-                <h1 className="my-5 text-center">Our Products </h1>
+        <div id="products" className="container my-4">
+            <div className="row  ">
+                <h1 className="product py-2 my-4 text-center">Our Products </h1>
                 <div className=" products-container ">
                     {
                         products.slice(0, 6).map(product => <Product

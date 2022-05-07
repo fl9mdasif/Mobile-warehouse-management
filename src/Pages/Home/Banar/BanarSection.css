@@ -47,6 +47,11 @@
     vertical-align: middle;
 }
 
+.button {
+    background-color: rgb(198, 188, 239);
+    color: black;
+}
+
 .button:hover,
 .button:focus {
     background-color: #16437E;

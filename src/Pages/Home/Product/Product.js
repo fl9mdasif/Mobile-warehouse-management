@@ -11,8 +11,8 @@ const Product = ({ product }) => {
     const { _id, name, description, imgUrl, quantity, price, supplier } = product;
     return (
 
-        <div className='w-100 mx-auto py-2'>
-            <div className="card mx-1 card-group text-center row">
+        <div className='w-100 mx-auto py-2 shadow'>
+            <div className="card mx-1 card-group text-center row border-none">
                 <img className="card-img-top" src={imgUrl} alt="p" />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>

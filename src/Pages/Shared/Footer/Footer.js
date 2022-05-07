@@ -23,8 +23,8 @@ const Footer = () => {
             }}>
                 Xiaomi Bangladesh
             </h1> */}
-            <Container className=" text-danger">
-                <Row id='row' className="border py-2">
+            <Container className=" text-danger " >
+                <Row id='row' className="border py-3 ">
                     <Column id='col' className="text-black">
                         <Heading className=" mt- text-black " >About Us</Heading>
                         <FooterLink className="text-black " href="#">Aim</FooterLink>
