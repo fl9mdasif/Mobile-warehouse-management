@@ -33,11 +33,10 @@ const Footer = () => {
 
                     <Column>
                         <Heading className="hh mt-  ">Social Media</Heading>
-                        <FooterLink className="text-black " href="#">
-                            <FontAwesomeIcon icon="fa-brands fa-facebook" />
-                            <i className="fab fa-facebook-f">
+                        <FooterLink className="text-primary " href="#">
+                            <i className="fab fa-facebook" >
 
-                                <span className="text-black " style={{ marginLeft: "10px" }}>
+                                <span className="text-blac " style={{ marginLeft: "10px" }}>
                                     Facebook
                                 </span>
                             </i>
@@ -50,7 +49,7 @@ const Footer = () => {
                                 </span>
                             </i>
                         </FooterLink>
-                        <FooterLink className="text-black " href="#">
+                        <FooterLink className="text-danger " href="#">
                             <i className="fab fa-youtube">
                                 <span style={{ marginLeft: "10px" }}>
                                     Youtube
