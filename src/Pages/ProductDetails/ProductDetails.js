@@ -12,7 +12,7 @@ const ProductDetails = () => {
     const navigate = useNavigate();
     // const [products, setProducts] = useProducts({});
     const [product, setProduct] = useState({});
-    const url = `http://localhost:5000/product/${productId}`;
+    const url = `https://secure-savannah-30999.herokuapp.com/product/${productId}`;
 
     useEffect(() => {
         // console.log(url)
@@ -36,7 +36,7 @@ const ProductDetails = () => {
 
         const newQuantity = parseInt(products.quantity) - 1;
         const makeQuantity = { newQuantity };
-        // const url = `http://localhost:5000/product/${productId}`;
+        // const url = `https://secure-savannah-30999.herokuapp.com/product/${productId}`;
 
         fetch(url, {
             method: 'PUT',

@@ -12,6 +12,8 @@ import {
 // import './FooterStyle.js';
 
 const Footer = () => {
+    const date = new Date();
+    const year = date.getFullYear();
     return (
         <Box className="bg-white">
 
@@ -57,6 +59,9 @@ const Footer = () => {
                             </i>
                         </FooterLink>
                     </Column>
+                    <p className=" copyright text-black text-bold text-center py-2 p-1  d-block  mb-0">Copyright <a className="text-decoration-none" href="https://www.facebook.com/fl9omi" > @fl9mdasif </a> {year}</p>
+
+
                 </Row>
             </Container>
         </Box>
