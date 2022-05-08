@@ -2,21 +2,23 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
-import useProducts from '../../hooks/Hooks';
+// import useProducts from '../../hooks/Hooks';
 import './Pd.css'
 // import useProducts from '../../hooks/Hooks';
 
 const ProductDetails = () => {
-    const [products] = useProducts({})
+    // const [products] = useProducts({})
     const { productId } = useParams();
     const navigate = useNavigate();
     // const [products, setProducts] = useProducts({});
     const [product, setProduct] = useState({});
-    const url = `https://secure-savannah-30999.herokuapp.com/product/${productId}`;
+    const { quantity } = product;
+    let oldQuantity = parseInt(quantity);
+
 
     useEffect(() => {
         // console.log(url)
-
+        const url = `https://secure-savannah-30999.herokuapp.com/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -31,12 +33,13 @@ const ProductDetails = () => {
 
     //delivery product
     const deliveryProduct = (id) => {
-        console.log(products)
+        // console.log(product)
 
-
-        const newQuantity = parseInt(products.quantity) - 1;
+        const newQuantity = oldQuantity - parseInt(1);
+        console.log(newQuantity)
         const makeQuantity = { newQuantity };
         // const url = `https://secure-savannah-30999.herokuapp.com/product/${productId}`;
+        const url = `https://secure-savannah-30999.herokuapp.com/product/${productId}`;
 
         fetch(url, {
             method: 'PUT',
@@ -52,6 +55,31 @@ const ProductDetails = () => {
             })
 
     }
+
+    //Submit product quantity
+    const handleQuantitySubmit = (e) => {
+        e.preventDefault();
+        // console.log(product.quantity)
+        const inputQuantity = e.target.number.value;
+        const newQuantity = oldQuantity + parseInt(inputQuantity)
+        const setQuantity = { newQuantity }
+        console.log('old', oldQuantity, 'new', newQuantity, setQuantity)
+
+        const url = `https://secure-savannah-30999.herokuapp.com/product/${productId}`;
+        //send data to the server
+        fetch(url, {
+            method: 'PUT',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(setQuantity)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                toast('Product Quantity has been updated successfully')
+                e.target.reset();
+            })
+    }
+
     return (
         <div className='w-75 mx-auto text-center'>
             <h2 className='m-3'>Manage Product</h2>
@@ -66,9 +94,14 @@ const ProductDetails = () => {
                     <li className="list-group-item">Quantity: {product.quantity}</li>
                     <li className="list-group-item">Supplier: {product.supplier}</li>
                 </ul>
+                <form onSubmit={handleQuantitySubmit}>
+                    <input placeholder="number" type="number" name="number" id="" required />
+                    <input type="submit" value="AddQUantity" />
+                    <ToastContainer />
+                </form>
                 <div className="card-body">
                     <button onClick={deliveryProduct} className='btn btn-primary w-50'>Delivered</button>
-                    <ToastContainer />
+
                 </div>
                 <div className="card-body">
                     <button className='btn btn-primary w-50' onClick={() => navigateToAddProduct()}>Add Product</button>
@@ -76,12 +109,8 @@ const ProductDetails = () => {
                 <div className="card-body">
                     <Link to='/manageproduct'><button className='btn btn-primary w-50' >Delete Product</button></Link>
                 </div>
-                {/* 
-                <div className="card-body">
-                    <button className='btn btn-primary w-50' onClick={() => navigateToUpdateQuantity(_id)}>Update Quantity</button>
-                </div>
-                
-                 */}
+
+
             </div>
         </div>
     );
