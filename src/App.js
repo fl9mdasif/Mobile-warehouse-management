@@ -11,7 +11,7 @@ import AddProduct from './Pages/AddProduct/AddProduct';
 import ManageProduct from './Pages/ManageProduct/ManageProduct';
 import MyProducts from './Pages/MyProducts/MyProducts';
 import Footer from './Pages/Shared/Footer/Footer';
-import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -22,7 +22,6 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
         <Route path='/blog' element={
-          // <RequireAuth> <Blog /></RequireAuth>
           <Blog />
         }></Route>
         <Route path='/product' element={<Products />}></Route>
@@ -33,10 +32,15 @@ function App() {
         }></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/registration' element={<Registration />}></Route>
-        <Route path='/manageproduct' element={<ManageProduct></ManageProduct>}></Route>
-        <Route path='/addproduct' element={
-          <AddProduct />
+
+        <Route path='/manageproduct' element={
+          <PrivateRoute><ManageProduct /></PrivateRoute>
         }></Route>
+
+        <Route path='/addproduct' element={
+          <PrivateRoute><AddProduct /></PrivateRoute>
+        }></Route>
+
         <Route path='*' element={<NotFound />}></Route>
       </Routes>
       <Footer ></Footer>
