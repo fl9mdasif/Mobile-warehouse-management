@@ -1,6 +1,6 @@
 # Design And Development mi Store a professional wearhouse online store.
 
-This project was developed by @fl9mdasif [capturedmoment.com](https://capturedmoment.firebaseapp.com/)
+This project was developed by @fl9mdasif [Wearhouse](https://capturedmoment.firebaseapp.com/)
 
 ### `What is inside my project`
 
