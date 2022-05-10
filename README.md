@@ -1,24 +1,26 @@
 # Design And Development mi Store a professional wearhouse online store.
 
-This project was developed by @fl9mdasif [Wearhouse](https://capturedmoment.firebaseapp.com/)
+[Live Site Wearhouse](https://mobile-warehouse-fd23b.web.app/) <- This project was developed by @fl9mdasif
 
 ### `What is inside my project`
 
 * This is a professional wearhouse website
 * Have producs he provided card
-* have home page, blog page, 
+* have home page, 
+* product page,
+* blog page, 
 * add item page, 
 * manage item page, 
 * my items page,
-* 404 page
-* have login page
-* have registration page
-* email and password firebase authentication
-* google firebase authentication
-* email verification 
+* 404 page,
+* have login page,
+* have registration page,
+* email and password firebase authentication,
+* google firebase authentication,
+* email verification,
 * reset password facilities
 
-### `The technology/ Libraries/ fameWork are being used to design & develop  ` [WearHouse](https://capturedmoment.firebaseapp.com/)
+### `The technology/ Libraries/ fameWork are being used to design & develop  ` [WearHouse Live Site](https://mobile-warehouse-fd23b.web.app/)
 * React js 
 * React Router
 * Firebase for (Authenticaion + database + hosting)
